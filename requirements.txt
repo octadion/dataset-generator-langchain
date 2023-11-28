@@ -7,3 +7,6 @@ python-dotenv
 sentence-transformers
 streamlit
 streamlit-extras
+pyarrow
+fastparquet
+tiktoken
