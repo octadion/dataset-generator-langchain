@@ -78,7 +78,7 @@ def main():
     load_dotenv()
     st.set_page_config("DataGenerator-LangChain", page_icon=":books:")
     st.header("Generate your dataset :brain:")
-    dataset_count = st.number_input("Number of datasets to generate", min_value=1, max_value=1000)
+    dataset_count = st.number_input("Number of datasets to generate", min_value=3, max_value=1000)
     options = {
         "QnA": "Membuat QnA (Pertanyaan dan Jawaban)",
         "Summarization": "Membuat Rangkuman pasal atau sebuah topik pada pasal",
