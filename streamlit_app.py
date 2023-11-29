@@ -116,7 +116,7 @@ def main():
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
     if choice == "Similarity Search" or choice == "Revision" or choice == "Draft":
-        docs = st.file_uploader("Upload the PDF Files here", accept_multiple_files=True)
+        docs = st.file_uploader("Upload the PDF/CSV Files here", accept_multiple_files=True)
         if docs:
             if not isinstance(docs, list):
                 docs = [docs]
