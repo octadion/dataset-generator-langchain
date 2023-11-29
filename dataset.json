@@ -1,22 +1,5 @@
-[
-    {
-        "reference": "Pasal 12 ayat (4), Pasal 30 ayat (5), dan Pasal 37 ayat (3) Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
-        "instruction": "Apa yang perlu ditetapkan dalam rangka melaksanakan ketentuan Pasal 12 ayat (4), Pasal 30 ayat (5), dan Pasal 37 ayat (3) Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional?",
-        "output": "Peraturan Pemerintah tentang Pendidikan Agama dan Pendidikan Keagamaan"
-    },
-    {
-        "reference": "Pasal 5 ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945; Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional; Undang-Undang Nomor 1/PNPS/1965 jo Undang-Undang Nomor 5 Tahun 1969 Tentang Pencegahan Penyalahgunaan dan/atau Penodaan Agama",
-        "instruction": "Apa yang diingat dalam menyusun Peraturan Pemerintah tentang Pendidikan Agama dan Pendidikan Keagamaan?",
-        "output": "Pasal 5 ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945; Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional; Undang-Undang Nomor 1/PNPS/1965 jo Undang-Undang Nomor 5 Tahun 1969 Tentang Pencegahan Penyalahgunaan dan/atau Penodaan Agama"
-    },
-    {
-        "reference": "PP 55 Tahun 2007, Bab 1, Ketentuan Umum, Pasal 1, Ayat 2",
-        "instruction": "Apa definisi pendidikan keagamaan menurut PP 55 Tahun 2007?",
-        "output": "Pendidikan keagamaan adalah pendidikan yang mempersiapkan peserta didik untuk dapat menjalankan peranan yang menuntut penguasaan pengetahuan tentang ajaran agama dan/atau menjadi ahli ilmu agama dan mengamalkan ajaran agamanya."
-    },
-    {
-        "reference": "belum ada",
-        "instruction": "Apa dasar hukum lain yang terkait dengan Peraturan Pemerintah tentang Pendidikan Agama dan Pendidikan Keagamaan?",
-        "output": "Tidak ada dasar hukum lain yang terkait dengan Peraturan Pemerintah tentang Pendidikan Agama dan Pendidikan Keagamaan."
-    }
-]
+{
+    "reference": "Pasal 19 ayat (1) dan (2) PP 55 Tahun 2007, UU 20 Tahun 2003",
+    "instruction": "Berdasarkan PP 55 Tahun 2007 dan UU 20 Tahun 2003, berikan saran revisi pasal mengenai ujian nasional pendidikan diniyah dasar dan menengah.",
+    "output": "Pasal 19 ayat (1) dan (2) PP 55 Tahun 2007 menyebutkan bahwa ujian nasional pendidikan diniyah dasar dan menengah diselenggarakan untuk menentukan standar pencapaian kompetensi peserta didik atas ilmu-ilmu yang bersumber dari ajaran Islam. Namun, dalam UU 20 Tahun 2003 tentang Sistem Pendidikan Nasional, tidak terdapat keterkaitan langsung mengenai ujian nasional pendidikan diniyah. Oleh karena itu, disarankan untuk mempertimbangkan penambahan klausul yang menyebutkan bahwa ujian nasional pendidikan diniyah dasar dan menengah juga harus mencakup standar pencapaian kompetensi peserta didik dalam mata pelajaran umum seperti bahasa Indonesia, matematika, ilmu pengetahuan alam, serta seni dan budaya."
+}

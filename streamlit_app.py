@@ -30,24 +30,33 @@ def get_pdf_text(docs):
                 text+=page.extract_text()
             return text
 def get_csv_doc(docs):
-    if docs is not None:
-        if not os.path.exists('temp'):
-            os.makedirs('temp')
-        with open(os.path.join('temp', docs.name), 'wb') as f:
-            f.write(docs.getbuffer())
-        loader = CSVLoader(file_path=os.path.join('temp', docs.name), encoding="utf-8",
+    if not os.path.exists('temp'):
+        os.makedirs('temp')
+    loaded_documents = []
+    if not isinstance(docs, list):
+        docs = [docs]
+    for doc in docs:
+        with open(os.path.join('temp', doc.name), 'wb') as f:
+            f.write(doc.getbuffer())
+        loader = CSVLoader(file_path=os.path.join('temp', doc.name), encoding="utf-8",
                            csv_args={'delimiter': ','})
         document = loader.load()
-        return document
+        loaded_documents.append(document)
+    return loaded_documents
 def get_text_chunks_pdf(text):
     text_splitter = CharacterTextSplitter(separator="\n", chunk_size=500, chunk_overlap=20, length_function=len)
     chunks = text_splitter.split_text(text)
     return chunks
 
-def get_text_chunks_csv(document):
+def get_text_chunks_csv(documents):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=20)
-    chunks = text_splitter.split_documents(document)
-    return chunks
+    all_chunks = []
+    if not isinstance(documents, list):
+        documents = [documents]
+    for document in documents:
+        chunks = text_splitter.split_documents(document)
+        all_chunks.extend(chunks)
+    return all_chunks
 
 def get_vector_store_pdf(text_chunks):
     embeddings=OpenAIEmbeddings()
@@ -92,7 +101,7 @@ def main():
     load_dotenv()
     st.set_page_config("DataGenerator-LangChain", page_icon=":books:")
     st.header("Generate your dataset :brain:")
-    dataset_count = st.number_input("Number of datasets to generate", min_value=3, max_value=1000)
+    dataset_count = st.number_input("Number of datasets to generate", min_value=1, max_value=1000)
     options = {
         "QnA": "Membuat QnA (Pertanyaan dan Jawaban)",
         "Summarization": "Membuat Rangkuman pasal atau sebuah topik pada pasal",
@@ -109,10 +118,15 @@ def main():
     if choice == "Similarity Search" or choice == "Revision" or choice == "Draft":
         docs = st.file_uploader("Upload the PDF Files here", accept_multiple_files=True)
         if docs:
+            if not isinstance(docs, list):
+                docs = [docs]
             main_document = docs[0]
-            main_doc_name = main_document.name.replace('.pdf', '')
+            if main_document.name.endswith('.pdf'):
+                main_doc_name = main_document.name.replace('.pdf', '')
+            elif main_document.name.endswith('.csv'):
+                main_doc_name = main_document.name.replace('.csv', '')
             other_documents = docs[1:]
-            other_doc_names = [doc.name.replace('.pdf', '') for doc in other_documents]
+            other_doc_names = [doc.name.replace('.pdf', '').replace('.csv', '') for doc in other_documents]
             user_prompt = f"Anda adalah model yang mengubah isi teks menjadi berbagai tugas hukum dalam format JSON. " \
                       "Setiap JSON berisi ‘reference’ (tulis bunyi pasal dan ayat, serta nomor PP dan tahun), ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
                       f"Hanya merespons dengan JSON dan tanpa teks tambahan. Tugas dapat berupa {detail_text}, dengan {main_doc_name} sebagai dokumen utama, sedangkan {other_doc_names} sebagai dokumen pendukung. Hasilkan sebanyak {dataset_count} data. Pastikan setiap pertanyaan dan jawaban unik dan tidak berulang. \n"
@@ -129,11 +143,18 @@ def main():
     ''')
     if st.button('Process'):
         with st.spinner("Processing"):
-            if docs.name.endswith(".pdf"):
+            if not isinstance(docs, list):
+                docs = [docs]
+            document_type = None
+            if docs and docs[0].name.endswith(".pdf"):
+                document_type = "pdf"
+            elif docs and docs[0].name.endswith(".csv"):
+                document_type = "csv"
+            if document_type == "pdf":
                 raw_text = get_pdf_text(docs)
                 text_chunks = get_text_chunks_pdf(raw_text)
                 vectorstore = get_vector_store_pdf(text_chunks)
-            elif docs.name.endswith(".csv"):
+            elif document_type == "csv":
                 raw_text = get_csv_doc(docs)
                 text_chunks = get_text_chunks_csv(raw_text)
                 vectorstore = get_vector_store_csv(text_chunks)
