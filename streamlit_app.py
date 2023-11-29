@@ -3,41 +3,62 @@ import json
 import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
-from langchain.text_splitter import CharacterTextSplitter
+from langchain.text_splitter import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain.llms import HuggingFaceHub
+from langchain.document_loaders import CSVLoader
 import os
 import pandas as pd
 from langchain.chat_models import ChatOpenAI
 embedding_model_name = os.environ.get('EMBEDDING_MODEL_NAME')
 
-def get_pdf_text(pdf_docs):
-    if not isinstance(pdf_docs, list):
-        pdf_reader = PdfReader(pdf_docs)
+def get_pdf_text(docs):
+    if not isinstance(docs, list):
+        pdf_reader = PdfReader(docs)
         text = ""
         for page in pdf_reader.pages:
             text += page.extract_text()
         return text
     else:
         text=""
-        for pdf in pdf_docs:
+        for pdf in docs:
             pdf_reader = PdfReader(pdf)
             for page in pdf_reader.pages:
                 text+=page.extract_text()
-        return text
-
-def get_text_chunks(text):
+            return text
+def get_csv_doc(docs):
+    if docs is not None:
+        if not os.path.exists('temp'):
+            os.makedirs('temp')
+        with open(os.path.join('temp', docs.name), 'wb') as f:
+            f.write(docs.getbuffer())
+        loader = CSVLoader(file_path=os.path.join('temp', docs.name), encoding="utf-8",
+                           csv_args={'delimiter': ','})
+        document = loader.load()
+        return document
+def get_text_chunks_pdf(text):
     text_splitter = CharacterTextSplitter(separator="\n", chunk_size=500, chunk_overlap=20, length_function=len)
     chunks = text_splitter.split_text(text)
     return chunks
 
-def get_vector_store(text_chunks):
+def get_text_chunks_csv(document):
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=20)
+    chunks = text_splitter.split_documents(document)
+    return chunks
+
+def get_vector_store_pdf(text_chunks):
     embeddings=OpenAIEmbeddings()
     # embeddings=HuggingFaceEmbeddings(model_name = embedding_model_name)
     vectorstore = FAISS.from_texts(text_chunks, embedding=embeddings)
+    return vectorstore
+
+def get_vector_store_csv(text_chunks):
+    embeddings=OpenAIEmbeddings()
+    # embeddings=HuggingFaceEmbeddings(model_name = embedding_model_name)
+    vectorstore = FAISS.from_documents(text_chunks, embedding=embeddings)
     return vectorstore
 
 def get_conversation_chain(vectorstore):
@@ -51,25 +72,18 @@ def generate_dataset(user_prompt):
     response=st.session_state.conversation({'question':user_prompt})
     print(response)
     dataset = response['chat_history']
-    # Extract the 'content' field from the dataset
     content = [message.content for message in dataset]
-    # Convert the content to a pandas DataFrame
     df = pd.DataFrame(content, columns=['content'])
     df_answer = df.iat[1, 0]
     answer_json = json.loads(df_answer.replace('\n', ''))
-    # Save the formatted JSON to a file
     with open('dataset.json', 'w') as f:
         json.dump(answer_json, f, indent=4)
-    # Download the JSON file
     st.markdown(get_table_download_link(), unsafe_allow_html=True)
 
 def get_table_download_link():
-    # Open the JSON file and read its contents
     with open('dataset.json', 'r') as f:
         json_data = f.read()
-    # Encode the JSON data to base64
     b64 = base64.b64encode(json_data.encode()).decode()  # some strings
-    # Create the download link
     href = f'<a href="data:file/json;base64,{b64}" download="dataset.json">Download JSON File</a>'
     return href
 
@@ -93,17 +107,17 @@ def main():
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
     if choice == "Similarity Search" or choice == "Revision" or choice == "Draft":
-        pdf_docs = st.file_uploader("Upload the PDF Files here", accept_multiple_files=True)
-        if pdf_docs:
-            main_document = pdf_docs[0]
+        docs = st.file_uploader("Upload the PDF Files here", accept_multiple_files=True)
+        if docs:
+            main_document = docs[0]
             main_doc_name = main_document.name.replace('.pdf', '')
-            other_documents = pdf_docs[1:]
+            other_documents = docs[1:]
             other_doc_names = [doc.name.replace('.pdf', '') for doc in other_documents]
             user_prompt = f"Anda adalah model yang mengubah isi teks menjadi berbagai tugas hukum dalam format JSON. " \
                       "Setiap JSON berisi ‘reference’ (tulis bunyi pasal dan ayat, serta nomor PP dan tahun), ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
                       f"Hanya merespons dengan JSON dan tanpa teks tambahan. Tugas dapat berupa {detail_text}, dengan {main_doc_name} sebagai dokumen utama, sedangkan {other_doc_names} sebagai dokumen pendukung. Hasilkan sebanyak {dataset_count} data. Pastikan setiap pertanyaan dan jawaban unik dan tidak berulang. \n"
     else:
-        pdf_docs = st.file_uploader("Upload the PDF Files here")
+        docs = st.file_uploader("Upload the PDF/CSV Files here")
         user_prompt = f"Anda adalah model yang mengubah isi teks menjadi berbagai tugas hukum dalam format JSON. " \
                       "Setiap JSON berisi ‘reference’ (tulis bunyi pasal dan ayat, serta nomor PP dan tahun), ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
                       f"Hanya merespons dengan JSON dan tanpa teks tambahan. Tugas dapat berupa {detail_text}. Hasilkan sebanyak {dataset_count} data. Pastikan setiap pertanyaan dan jawaban unik dan tidak berulang. \n"
@@ -115,13 +129,14 @@ def main():
     ''')
     if st.button('Process'):
         with st.spinner("Processing"):
-            # Extract Text from PDF
-            raw_text = get_pdf_text(pdf_docs)
-            # Split the Text into Chunks
-            text_chunks = get_text_chunks(raw_text)
-            # Create Vector Store
-            vectorstore=get_vector_store(text_chunks)
-            # Create Conversation Chain
+            if docs.name.endswith(".pdf"):
+                raw_text = get_pdf_text(docs)
+                text_chunks = get_text_chunks_pdf(raw_text)
+                vectorstore = get_vector_store_pdf(text_chunks)
+            elif docs.name.endswith(".csv"):
+                raw_text = get_csv_doc(docs)
+                text_chunks = get_text_chunks_csv(raw_text)
+                vectorstore = get_vector_store_csv(text_chunks)
             st.session_state.conversation=get_conversation_chain(vectorstore)
             # Generate Dataset
             generate_dataset(user_prompt)
