@@ -120,7 +120,7 @@ def main():
         "QnA": "Membuat QnA (Pertanyaan dan Jawaban)",
         "Summarization": "Membuat Rangkuman pasal atau sebuah topik pada pasal",
         "Element Extraction": "Melakukan Ekstraksi elemen atau identifikasi pasal",
-        "Similarity Search": "Menemukan kesamaan pasal atau sebuah topik pasal, atau menemukan tumpang tindih pasal",
+        "Similarity Search": "Menemukan kesamaan pasal atau sebuah topik pasal, atau menemukan tumpang tindih pasal, atau atau merelasi pasal pasal terkait",
         "Revision": "Memberikan saran Revisi pasal berdasarkan menimbang dan mengingat pasal terkait serta berdasarkan pasal terdahulu",
         "Draft": "Membuat Draft pasal baru berdasarkan menimbang dan mengingat pasal terkait serta berdasarkan pasal terdahulu",
     }

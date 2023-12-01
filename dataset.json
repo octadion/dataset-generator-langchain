@@ -1,142 +1,132 @@
 [
     {
-        "reference": "Pasal 80 (1) PP No. 48 Tahun 2008",
-        "instruction": "Buatlah rangkuman mengenai alokasi anggaran pendidikan dalam APBN setiap tahun.",
-        "output": "Setiap tahun, anggaran pendidikan dalam APBN dialokasikan sebesar 20% dari belanja negara."
+        "reference": "Pasal I, Angka 1, Pasal 80",
+        "instruction": "Ekstrak bunyi Pasal 80",
+        "output": "Anggaran pendidikan dalam anggaran pendapatan dan belanja negara setiap tahun anggaran sekurang-kurangnya dialokasikan 2Oo/o (dua puluh persen) dari belanja negara."
     },
     {
-        "reference": "Pasal 81 (1) PP No. 48 Tahun 2008",
-        "instruction": "Jelaskan tentang alokasi anggaran pendidikan dalam APBD setiap tahun.",
-        "output": "Dalam APBD setiap tahun, anggaran pendidikan dialokasikan sebesar 20% dari belanja daerah."
+        "reference": "Pasal I, Angka 2, Ayat (1), Pasal 81",
+        "instruction": "Ekstrak bunyi Pasal 81",
+        "output": "Anggaran pendidikan dalam anggaran pendapatan dan belanja daerah setiap tahun anggaran sekurang-kurangnya dialokasikan 2OVo (dua puluh persen) dari belanja daerah."
     },
     {
-        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
-        "instruction": "Apa yang dimaksud dengan penggunaan anggaran pendidikan dalam APBD?",
-        "output": "Penggunaan anggaran pendidikan dalam APBD digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+        "reference": "Pasal I, Angka 2, Ayat (2), Pasal 81",
+        "instruction": "Ekstrak bunyi Ayat (2) Pasal 81",
+        "output": "Anggaran pendidikan sebagaimana dimaksud pada ayat (1) digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten / kota sesuai dengan ketentuan undangan."
     },
     {
-        "reference": "Pasal 31 (1) UUD 1945",
-        "instruction": "Tuliskan isi dari Pasal 31 ayat (1) Undang-Undang Dasar 1945.",
-        "output": "Setiap warga negara berhak mendapatkan pendidikan."
+        "reference": "Pasal I, Angka 3, Pasal 82",
+        "instruction": "Ekstrak bunyi Pasal 82",
+        "output": "Cukup jelas."
     },
     {
-        "reference": "Pasal 31 (5) UUD 1945",
-        "instruction": "Apa yang diatur dalam Pasal 31 ayat (5) Undang-Undang Dasar 1945?",
-        "output": "Negara wajib memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+        "reference": "Pasal I, Angka 4, Pasal 83",
+        "instruction": "Ekstrak bunyi Pasal 83",
+        "output": "Cukup jelas."
     },
     {
-        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
-        "instruction": "Apa yang dimaksud dengan Peraturan Pemerintah dalam konteks ini?",
-        "output": "Peraturan Pemerintah merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+        "reference": "Tambah. LN RI No. 6793, SK No 082474",
+        "instruction": "Ekstrak nomor SK",
+        "output": "082474"
     },
     {
-        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
-        "instruction": "Jelaskan tentang isi Pasal I Angka 2 PP No. 18 Tahun 2022.",
-        "output": "Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+        "reference": "Pasal I, Angka 2, Ayat (s), Pasal 81",
+        "instruction": "Ekstrak bunyi Ayat (s) Pasal 81",
+        "output": "Yang dimaksud dengan \"sepanjang urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota telah terpenuhi\" adalah perencanaan penganggaran provinsi atau kabupaten/kota telah menganggarkan pemenuhan standar pelayanan minimal bidang pendidikan yang menjadi kewenangannya."
     },
     {
-        "reference": "Pasal 80 PP No. 48 Tahun 2008",
-        "instruction": "Berdasarkan Pasal 80 PP No. 48 Tahun 2008, berapa persen alokasi anggaran pendidikan dalam APBN setiap tahun?",
-        "output": "Alokasi anggaran pendidikan dalam APBN setiap tahun adalah sebesar 20%."
+        "reference": "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945",
+        "instruction": "Ekstrak tahun berlaku UUD",
+        "output": "1945"
     },
     {
-        "reference": "Pasal 81 PP No. 48 Tahun 2008",
-        "instruction": "Alokasi anggaran pendidikan dalam APBD setiap tahun berapa persen?",
-        "output": "Alokasi anggaran pendidikan dalam APBD setiap tahun adalah sebesar 20%."
+        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
+        "instruction": "Ekstrak nomor undang-undang",
+        "output": "20"
     },
     {
-        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
-        "instruction": "Apa yang menjadi penggunaan anggaran pendidikan dalam APBD?",
-        "output": "Anggaran pendidikan dalam APBD digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
+        "instruction": "Ekstrak judul undang-undang",
+        "output": "Sistem Pendidikan Nasional"
     },
     {
-        "reference": "Pasal 31 (1) UUD 1945",
-        "instruction": "Tuliskan hak apa yang dimiliki setiap warga negara berdasarkan Pasal 31 ayat (1) UUD 1945.",
-        "output": "Setiap warga negara memiliki hak untuk mendapatkan pendidikan."
+        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
+        "instruction": "Ekstrak tahun berlaku undang-undang",
+        "output": "2003"
     },
     {
-        "reference": "Pasal 31 (5) UUD 1945",
-        "instruction": "Apa yang harus dilakukan oleh negara berdasarkan Pasal 31 ayat (5) UUD 1945?",
-        "output": "Negara wajib memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
+        "instruction": "Ekstrak jenis undang-undang",
+        "output": "Undang-Undang"
     },
     {
-        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
-        "instruction": "Definisikan apa yang dimaksud dengan Peraturan Pemerintah dalam konteks ini.",
-        "output": "Peraturan Pemerintah dalam konteks ini merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
+        "instruction": "Ekstrak nomor peraturan pemerintah",
+        "output": "48"
     },
     {
-        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
-        "instruction": "Apakah Pasal I Angka 2 PP No. 18 Tahun 2022 memberikan informasi yang spesifik?",
-        "output": "Tidak, Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
+        "instruction": "Ekstrak tahun berlaku peraturan pemerintah",
+        "output": "2008"
     },
     {
-        "reference": "Pasal 80 PP No. 48 Tahun 2008",
-        "instruction": "Berapa persen alokasi anggaran pendidikan dalam APBN setiap tahun berdasarkan Pasal 80 PP No. 48 Tahun 2008?",
-        "output": "Alokasi anggaran pendidikan dalam APBN setiap tahun adalah sebesar 20%."
+        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
+        "instruction": "Ekstrak judul peraturan pemerintah",
+        "output": "Pendanaan Pendidikan"
     },
     {
-        "reference": "Pasal 81 PP No. 48 Tahun 2008",
-        "instruction": "Berapa persen alokasi anggaran pendidikan dalam APBD setiap tahun menurut Pasal 81 PP No. 48 Tahun 2008?",
-        "output": "Alokasi anggaran pendidikan dalam APBD setiap tahun adalah sebesar 20%."
+        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
+        "instruction": "Ekstrak jenis peraturan pemerintah",
+        "output": "Peraturan Pemerintah"
     },
     {
-        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
-        "instruction": "Apa tujuan dari penggunaan anggaran pendidikan dalam APBD?",
-        "output": "Tujuan dari penggunaan anggaran pendidikan dalam APBD adalah untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+        "reference": "SK No 082467",
+        "instruction": "Ekstrak nomor SK",
+        "output": "082467"
     },
     {
-        "reference": "Pasal 31 (1) UUD 1945",
-        "instruction": "Jelaskan hak apa yang dimiliki setiap warga negara berdasarkan Pasal 31 ayat (1) UUD 1945.",
-        "output": "Setiap warga negara memiliki hak untuk mendapatkan pendidikan."
+        "reference": "SK No 082467",
+        "instruction": "Ekstrak judul SK",
+        "output": "Cukup jelas."
     },
     {
-        "reference": "Pasal 31 (5) UUD 1945",
-        "instruction": "Apa yang harus dilakukan oleh negara berdasarkan Pasal 31 ayat (5) UUD 1945?",
-        "output": "Negara harus memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+        "reference": "SK No 082467",
+        "instruction": "Ekstrak isi SK",
+        "output": "Berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perluIPRESIDEN REPUBLIK INDONESIA-3- Ketentuan Pasal 80 diubah, sehingga berbunyi sebagai berikut: Pasal 80 (l) Anggaran pendidikan dalam anggaran pendapatan dan belanja negara setiap tahun anggaran sekurang-kurangnya dialokasikan 2Oo/o (dua puluh persen) dari belanja negara."
     },
     {
-        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
-        "instruction": "Definisikan Peraturan Pemerintah dalam konteks ini.",
-        "output": "Peraturan Pemerintah dalam konteks ini merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+        "reference": "SK No 082468",
+        "instruction": "Ekstrak nomor SK",
+        "output": "082468"
     },
     {
-        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
-        "instruction": "Apakah Pasal I Angka 2 PP No. 18 Tahun 2022 memberikan informasi yang spesifik?",
-        "output": "Tidak, Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+        "reference": "SK No 082468",
+        "instruction": "Ekstrak judul SK",
+        "output": "Cukup jelas."
     },
     {
-        "reference": "Pasal 80 PP No. 48 Tahun 2008",
-        "instruction": "Sebutkan persentase alokasi anggaran pendidikan dalam APBN setiap tahun berdasarkan Pasal 80 PP No. 48 Tahun 2008.",
-        "output": "Persentase alokasi anggaran pendidikan dalam APBN setiap tahun adalah 20%."
+        "reference": "SK No 082468",
+        "instruction": "Ekstrak isi SK",
+        "output": "Ketentuan Pasal 81 diubah, sehingga berbunyi sebagai berikut: Pasal 81 (1) Anggaran pendidikan dalam anggaran pendapatan dan belanja daerah setiap tahun anggaran sekurang-kurangnya dialokasikan 2OVo (dua puluh persen) dari belanja daerah. (21 Anggaran pendidikan sebagaimana dimaksud pada ayat (1) digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten / kota sesuai dengan ketentuan undangan."
     },
     {
-        "reference": "Pasal 81 PP No. 48 Tahun 2008",
-        "instruction": "Berapa persentase alokasi anggaran pendidikan dalam APBD setiap tahun menurut Pasal 81 PP No. 48 Tahun 2008?",
-        "output": "Persentase alokasi anggaran pendidikan dalam APBD setiap tahun adalah 20%."
+        "reference": "SK No 082473",
+        "instruction": "Ekstrak nomor SK",
+        "output": "082473"
     },
     {
-        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
-        "instruction": "Jelaskan tujuan dari penggunaan anggaran pendidikan dalam APBD.",
-        "output": "Tujuan dari penggunaan anggaran pendidikan dalam APBD adalah untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+        "reference": "SK No 082473",
+        "instruction": "Ekstrak judul SK",
+        "output": "Cukup jelas."
     },
     {
-        "reference": "Pasal 31 (1) UUD 1945",
-        "instruction": "Tuliskan hak apa yang dimiliki oleh setiap warga negara berdasarkan Pasal 31 ayat (1) UUD 1945.",
-        "output": "Setiap warga negara memiliki hak untuk mendapatkan pendidikan."
+        "reference": "SK No 082473",
+        "instruction": "Ekstrak isi SK",
+        "output": "Cukup jelas."
     },
     {
-        "reference": "Pasal 31 (5) UUD 1945",
-        "instruction": "Apa yang harus dilakukan oleh negara menurut Pasal 31 ayat (5) UUD 1945?",
-        "output": "Negara harus memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
-    },
-    {
-        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
-        "instruction": "Jelaskan pengertian Peraturan Pemerintah dalam konteks ini.",
-        "output": "Peraturan Pemerintah dalam konteks ini merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
-    },
-    {
-        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
-        "instruction": "Apakah Pasal I Angka 2 PP No. 18 Tahun 2022 memberikan informasi yang spesifik?",
-        "output": "Tidak, Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+        "reference": "Tambah. LN RI No. 6793, SK No 082474",
+        "instruction": "Ekstrak nomor Lembaran Negara",
+        "output": "6793"
     }
 ]
