@@ -29,6 +29,7 @@ def get_pdf_text(docs):
             for page in pdf_reader.pages:
                 text+=page.extract_text()
             return text
+
 def get_csv_doc(docs):
     if not os.path.exists('temp'):
         os.makedirs('temp')
@@ -43,6 +44,7 @@ def get_csv_doc(docs):
         document = loader.load()
         loaded_documents.append(document)
     return loaded_documents
+
 def get_text_chunks_pdf(text):
     text_splitter = CharacterTextSplitter(separator="\n", chunk_size=500, chunk_overlap=20, length_function=len)
     chunks = text_splitter.split_text(text)
@@ -78,22 +80,34 @@ def get_conversation_chain(vectorstore):
     return conversation_chain
 
 def generate_dataset(user_prompt):
-    response=st.session_state.conversation({'question':user_prompt})
-    print(response)
-    dataset = response['chat_history']
-    content = [message.content for message in dataset]
-    df = pd.DataFrame(content, columns=['content'])
-    df_answer = df.iat[1, 0]
-    answer_json = json.loads(df_answer.replace('\n', ''))
-    with open('dataset.json', 'w') as f:
-        json.dump(answer_json, f, indent=4)
-    st.markdown(get_table_download_link(), unsafe_allow_html=True)
+    try:
+        response=st.session_state.conversation({'question':user_prompt})
+        print(response)
+        dataset = response['chat_history']
+        content = [message.content for message in dataset]
+        df = pd.DataFrame(content, columns=['content'])
+        df_answer = df.iat[1, 0]
+        answer_json = json.loads(df_answer.replace('\n', ''))
+        with open('dataset.json', 'w') as f:
+            json.dump(answer_json, f, indent=4)
+        st.markdown(get_table_download_link_json(), unsafe_allow_html=True)
+    except json.JSONDecodeError:
+        with open('dataset.txt', 'w') as f:
+            f.write(df_answer)
+        st.markdown(get_table_download_link_txt(), unsafe_allow_html=True)
 
-def get_table_download_link():
+def get_table_download_link_json():
     with open('dataset.json', 'r') as f:
         json_data = f.read()
     b64 = base64.b64encode(json_data.encode()).decode()  # some strings
     href = f'<a href="data:file/json;base64,{b64}" download="dataset.json">Download JSON File</a>'
+    return href
+
+def get_table_download_link_txt():
+    with open('dataset.txt', 'r') as f:
+        txt_data = f.read()
+    b64 = base64.b64encode(txt_data.encode()).decode()  # some strings
+    href = f'<a href="data:file/txt;base64,{b64}" download="dataset.txt">Download TXT File</a>'
     return href
 
 def main():

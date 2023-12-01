@@ -1,5 +1,142 @@
-{
-    "reference": "Pasal 19 ayat (1) dan (2) PP 55 Tahun 2007, UU 20 Tahun 2003",
-    "instruction": "Berdasarkan PP 55 Tahun 2007 dan UU 20 Tahun 2003, berikan saran revisi pasal mengenai ujian nasional pendidikan diniyah dasar dan menengah.",
-    "output": "Pasal 19 ayat (1) dan (2) PP 55 Tahun 2007 menyebutkan bahwa ujian nasional pendidikan diniyah dasar dan menengah diselenggarakan untuk menentukan standar pencapaian kompetensi peserta didik atas ilmu-ilmu yang bersumber dari ajaran Islam. Namun, dalam UU 20 Tahun 2003 tentang Sistem Pendidikan Nasional, tidak terdapat keterkaitan langsung mengenai ujian nasional pendidikan diniyah. Oleh karena itu, disarankan untuk mempertimbangkan penambahan klausul yang menyebutkan bahwa ujian nasional pendidikan diniyah dasar dan menengah juga harus mencakup standar pencapaian kompetensi peserta didik dalam mata pelajaran umum seperti bahasa Indonesia, matematika, ilmu pengetahuan alam, serta seni dan budaya."
-}
+[
+    {
+        "reference": "Pasal 80 (1) PP No. 48 Tahun 2008",
+        "instruction": "Buatlah rangkuman mengenai alokasi anggaran pendidikan dalam APBN setiap tahun.",
+        "output": "Setiap tahun, anggaran pendidikan dalam APBN dialokasikan sebesar 20% dari belanja negara."
+    },
+    {
+        "reference": "Pasal 81 (1) PP No. 48 Tahun 2008",
+        "instruction": "Jelaskan tentang alokasi anggaran pendidikan dalam APBD setiap tahun.",
+        "output": "Dalam APBD setiap tahun, anggaran pendidikan dialokasikan sebesar 20% dari belanja daerah."
+    },
+    {
+        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
+        "instruction": "Apa yang dimaksud dengan penggunaan anggaran pendidikan dalam APBD?",
+        "output": "Penggunaan anggaran pendidikan dalam APBD digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+    },
+    {
+        "reference": "Pasal 31 (1) UUD 1945",
+        "instruction": "Tuliskan isi dari Pasal 31 ayat (1) Undang-Undang Dasar 1945.",
+        "output": "Setiap warga negara berhak mendapatkan pendidikan."
+    },
+    {
+        "reference": "Pasal 31 (5) UUD 1945",
+        "instruction": "Apa yang diatur dalam Pasal 31 ayat (5) Undang-Undang Dasar 1945?",
+        "output": "Negara wajib memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+    },
+    {
+        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
+        "instruction": "Apa yang dimaksud dengan Peraturan Pemerintah dalam konteks ini?",
+        "output": "Peraturan Pemerintah merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+    },
+    {
+        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
+        "instruction": "Jelaskan tentang isi Pasal I Angka 2 PP No. 18 Tahun 2022.",
+        "output": "Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+    },
+    {
+        "reference": "Pasal 80 PP No. 48 Tahun 2008",
+        "instruction": "Berdasarkan Pasal 80 PP No. 48 Tahun 2008, berapa persen alokasi anggaran pendidikan dalam APBN setiap tahun?",
+        "output": "Alokasi anggaran pendidikan dalam APBN setiap tahun adalah sebesar 20%."
+    },
+    {
+        "reference": "Pasal 81 PP No. 48 Tahun 2008",
+        "instruction": "Alokasi anggaran pendidikan dalam APBD setiap tahun berapa persen?",
+        "output": "Alokasi anggaran pendidikan dalam APBD setiap tahun adalah sebesar 20%."
+    },
+    {
+        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
+        "instruction": "Apa yang menjadi penggunaan anggaran pendidikan dalam APBD?",
+        "output": "Anggaran pendidikan dalam APBD digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+    },
+    {
+        "reference": "Pasal 31 (1) UUD 1945",
+        "instruction": "Tuliskan hak apa yang dimiliki setiap warga negara berdasarkan Pasal 31 ayat (1) UUD 1945.",
+        "output": "Setiap warga negara memiliki hak untuk mendapatkan pendidikan."
+    },
+    {
+        "reference": "Pasal 31 (5) UUD 1945",
+        "instruction": "Apa yang harus dilakukan oleh negara berdasarkan Pasal 31 ayat (5) UUD 1945?",
+        "output": "Negara wajib memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+    },
+    {
+        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
+        "instruction": "Definisikan apa yang dimaksud dengan Peraturan Pemerintah dalam konteks ini.",
+        "output": "Peraturan Pemerintah dalam konteks ini merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+    },
+    {
+        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
+        "instruction": "Apakah Pasal I Angka 2 PP No. 18 Tahun 2022 memberikan informasi yang spesifik?",
+        "output": "Tidak, Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+    },
+    {
+        "reference": "Pasal 80 PP No. 48 Tahun 2008",
+        "instruction": "Berapa persen alokasi anggaran pendidikan dalam APBN setiap tahun berdasarkan Pasal 80 PP No. 48 Tahun 2008?",
+        "output": "Alokasi anggaran pendidikan dalam APBN setiap tahun adalah sebesar 20%."
+    },
+    {
+        "reference": "Pasal 81 PP No. 48 Tahun 2008",
+        "instruction": "Berapa persen alokasi anggaran pendidikan dalam APBD setiap tahun menurut Pasal 81 PP No. 48 Tahun 2008?",
+        "output": "Alokasi anggaran pendidikan dalam APBD setiap tahun adalah sebesar 20%."
+    },
+    {
+        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
+        "instruction": "Apa tujuan dari penggunaan anggaran pendidikan dalam APBD?",
+        "output": "Tujuan dari penggunaan anggaran pendidikan dalam APBD adalah untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+    },
+    {
+        "reference": "Pasal 31 (1) UUD 1945",
+        "instruction": "Jelaskan hak apa yang dimiliki setiap warga negara berdasarkan Pasal 31 ayat (1) UUD 1945.",
+        "output": "Setiap warga negara memiliki hak untuk mendapatkan pendidikan."
+    },
+    {
+        "reference": "Pasal 31 (5) UUD 1945",
+        "instruction": "Apa yang harus dilakukan oleh negara berdasarkan Pasal 31 ayat (5) UUD 1945?",
+        "output": "Negara harus memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+    },
+    {
+        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
+        "instruction": "Definisikan Peraturan Pemerintah dalam konteks ini.",
+        "output": "Peraturan Pemerintah dalam konteks ini merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+    },
+    {
+        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
+        "instruction": "Apakah Pasal I Angka 2 PP No. 18 Tahun 2022 memberikan informasi yang spesifik?",
+        "output": "Tidak, Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+    },
+    {
+        "reference": "Pasal 80 PP No. 48 Tahun 2008",
+        "instruction": "Sebutkan persentase alokasi anggaran pendidikan dalam APBN setiap tahun berdasarkan Pasal 80 PP No. 48 Tahun 2008.",
+        "output": "Persentase alokasi anggaran pendidikan dalam APBN setiap tahun adalah 20%."
+    },
+    {
+        "reference": "Pasal 81 PP No. 48 Tahun 2008",
+        "instruction": "Berapa persentase alokasi anggaran pendidikan dalam APBD setiap tahun menurut Pasal 81 PP No. 48 Tahun 2008?",
+        "output": "Persentase alokasi anggaran pendidikan dalam APBD setiap tahun adalah 20%."
+    },
+    {
+        "reference": "Pasal 81 (2) PP No. 48 Tahun 2008",
+        "instruction": "Jelaskan tujuan dari penggunaan anggaran pendidikan dalam APBD.",
+        "output": "Tujuan dari penggunaan anggaran pendidikan dalam APBD adalah untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota."
+    },
+    {
+        "reference": "Pasal 31 (1) UUD 1945",
+        "instruction": "Tuliskan hak apa yang dimiliki oleh setiap warga negara berdasarkan Pasal 31 ayat (1) UUD 1945.",
+        "output": "Setiap warga negara memiliki hak untuk mendapatkan pendidikan."
+    },
+    {
+        "reference": "Pasal 31 (5) UUD 1945",
+        "instruction": "Apa yang harus dilakukan oleh negara menurut Pasal 31 ayat (5) UUD 1945?",
+        "output": "Negara harus memprioritaskan dan membiayai penyelenggaraan pendidikan nasional."
+    },
+    {
+        "reference": "Pasal I Angka 1 PP No. 18 Tahun 2022",
+        "instruction": "Jelaskan pengertian Peraturan Pemerintah dalam konteks ini.",
+        "output": "Peraturan Pemerintah dalam konteks ini merujuk pada Peraturan Pemerintah Nomor 18 Tahun 2022."
+    },
+    {
+        "reference": "Pasal I Angka 2 PP No. 18 Tahun 2022",
+        "instruction": "Apakah Pasal I Angka 2 PP No. 18 Tahun 2022 memberikan informasi yang spesifik?",
+        "output": "Tidak, Pasal I Angka 2 PP No. 18 Tahun 2022 tidak memberikan informasi yang spesifik."
+    }
+]
