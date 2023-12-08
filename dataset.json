@@ -1,132 +1,27 @@
 [
     {
-        "reference": "Pasal I, Angka 1, Pasal 80",
-        "instruction": "Ekstrak bunyi Pasal 80",
-        "output": "Anggaran pendidikan dalam anggaran pendapatan dan belanja negara setiap tahun anggaran sekurang-kurangnya dialokasikan 2Oo/o (dua puluh persen) dari belanja negara."
+        "reference": "PP 57 Tahun 2021, Bab 2, Lingkup Standar Nasional Pendidikan, Bagian Kelima Standar Penilaian Pendidikan, Pasal 16, Ayat 3",
+        "instruction": "Apa yang harus menjadi tujuan penilaian hasil belajar Peserta Didik?",
+        "output": "Tujuan penilaian hasil belajar Peserta Didik adalah berkeadilan, objektif, dan edukatif."
     },
     {
-        "reference": "Pasal I, Angka 2, Ayat (1), Pasal 81",
-        "instruction": "Ekstrak bunyi Pasal 81",
-        "output": "Anggaran pendidikan dalam anggaran pendapatan dan belanja daerah setiap tahun anggaran sekurang-kurangnya dialokasikan 2OVo (dua puluh persen) dari belanja daerah."
+        "reference": "PP 57 Tahun 2021, Bab 5, Evaluasi, Bagian Kedua Evaluasi Hasil Belajar Peserta Didik, Pasal 42, Ayat 3",
+        "instruction": "Apa yang menjadi acuan dalam evaluasi hasil belajar Peserta Didik?",
+        "output": "Acuan dalam evaluasi hasil belajar Peserta Didik adalah standar penilaian Pendidikan dan standar kompetensi lulusan."
     },
     {
-        "reference": "Pasal I, Angka 2, Ayat (2), Pasal 81",
-        "instruction": "Ekstrak bunyi Ayat (2) Pasal 81",
-        "output": "Anggaran pendidikan sebagaimana dimaksud pada ayat (1) digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten / kota sesuai dengan ketentuan undangan."
+        "reference": "PP 57 Tahun 2021, Bab 5, Evaluasi, Bagian Kedua Evaluasi Hasil Belajar Peserta Didik, Pasal 42, Ayat 4",
+        "instruction": "Siapa yang dilakukan evaluasi hasil belajar Peserta Didik?",
+        "output": "Evaluasi hasil belajar Peserta Didik dilakukan terhadap Peserta Didik pendidikan anak usia dini, pendidikan dasar, pendidikan menengah, dan pendidikan tinggi."
     },
     {
-        "reference": "Pasal I, Angka 3, Pasal 82",
-        "instruction": "Ekstrak bunyi Pasal 82",
-        "output": "Cukup jelas."
+        "reference": "PP 57 Tahun 2021, Bab 4, Kurikulum, Pasal 36, Ayat 2",
+        "instruction": "Apa yang dimaksud dengan kerangka dasar kurikulum?",
+        "output": "Kerangka dasar kurikulum adalah rancangan landasan utama dalam pengembangan struktur kurikulum."
     },
     {
-        "reference": "Pasal I, Angka 4, Pasal 83",
-        "instruction": "Ekstrak bunyi Pasal 83",
-        "output": "Cukup jelas."
-    },
-    {
-        "reference": "Tambah. LN RI No. 6793, SK No 082474",
-        "instruction": "Ekstrak nomor SK",
-        "output": "082474"
-    },
-    {
-        "reference": "Pasal I, Angka 2, Ayat (s), Pasal 81",
-        "instruction": "Ekstrak bunyi Ayat (s) Pasal 81",
-        "output": "Yang dimaksud dengan \"sepanjang urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten/kota telah terpenuhi\" adalah perencanaan penganggaran provinsi atau kabupaten/kota telah menganggarkan pemenuhan standar pelayanan minimal bidang pendidikan yang menjadi kewenangannya."
-    },
-    {
-        "reference": "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945",
-        "instruction": "Ekstrak tahun berlaku UUD",
-        "output": "1945"
-    },
-    {
-        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
-        "instruction": "Ekstrak nomor undang-undang",
-        "output": "20"
-    },
-    {
-        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
-        "instruction": "Ekstrak judul undang-undang",
-        "output": "Sistem Pendidikan Nasional"
-    },
-    {
-        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
-        "instruction": "Ekstrak tahun berlaku undang-undang",
-        "output": "2003"
-    },
-    {
-        "reference": "Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
-        "instruction": "Ekstrak jenis undang-undang",
-        "output": "Undang-Undang"
-    },
-    {
-        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
-        "instruction": "Ekstrak nomor peraturan pemerintah",
-        "output": "48"
-    },
-    {
-        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
-        "instruction": "Ekstrak tahun berlaku peraturan pemerintah",
-        "output": "2008"
-    },
-    {
-        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
-        "instruction": "Ekstrak judul peraturan pemerintah",
-        "output": "Pendanaan Pendidikan"
-    },
-    {
-        "reference": "Peraturan Pemerintah Nomor 48 Tahun 2008 tentang Pendanaan Pendidikan",
-        "instruction": "Ekstrak jenis peraturan pemerintah",
-        "output": "Peraturan Pemerintah"
-    },
-    {
-        "reference": "SK No 082467",
-        "instruction": "Ekstrak nomor SK",
-        "output": "082467"
-    },
-    {
-        "reference": "SK No 082467",
-        "instruction": "Ekstrak judul SK",
-        "output": "Cukup jelas."
-    },
-    {
-        "reference": "SK No 082467",
-        "instruction": "Ekstrak isi SK",
-        "output": "Berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perluIPRESIDEN REPUBLIK INDONESIA-3- Ketentuan Pasal 80 diubah, sehingga berbunyi sebagai berikut: Pasal 80 (l) Anggaran pendidikan dalam anggaran pendapatan dan belanja negara setiap tahun anggaran sekurang-kurangnya dialokasikan 2Oo/o (dua puluh persen) dari belanja negara."
-    },
-    {
-        "reference": "SK No 082468",
-        "instruction": "Ekstrak nomor SK",
-        "output": "082468"
-    },
-    {
-        "reference": "SK No 082468",
-        "instruction": "Ekstrak judul SK",
-        "output": "Cukup jelas."
-    },
-    {
-        "reference": "SK No 082468",
-        "instruction": "Ekstrak isi SK",
-        "output": "Ketentuan Pasal 81 diubah, sehingga berbunyi sebagai berikut: Pasal 81 (1) Anggaran pendidikan dalam anggaran pendapatan dan belanja daerah setiap tahun anggaran sekurang-kurangnya dialokasikan 2OVo (dua puluh persen) dari belanja daerah. (21 Anggaran pendidikan sebagaimana dimaksud pada ayat (1) digunakan untuk mendanai urusan pendidikan yang menjadi kewenangan provinsi atau kabupaten / kota sesuai dengan ketentuan undangan."
-    },
-    {
-        "reference": "SK No 082473",
-        "instruction": "Ekstrak nomor SK",
-        "output": "082473"
-    },
-    {
-        "reference": "SK No 082473",
-        "instruction": "Ekstrak judul SK",
-        "output": "Cukup jelas."
-    },
-    {
-        "reference": "SK No 082473",
-        "instruction": "Ekstrak isi SK",
-        "output": "Cukup jelas."
-    },
-    {
-        "reference": "Tambah. LN RI No. 6793, SK No 082474",
-        "instruction": "Ekstrak nomor Lembaran Negara",
-        "output": "6793"
+        "reference": "PP 57 Tahun 2021, Bab 4, Kurikulum, Pasal 36, Ayat 3",
+        "instruction": "Apa yang dimaksud dengan struktur kurikulum?",
+        "output": "Struktur kurikulum adalah pengorganisasian atas kompetensi, muatan pembelajaran, dan beban belajar."
     }
 ]
