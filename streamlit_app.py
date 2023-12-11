@@ -117,7 +117,7 @@ def main():
     st.header("Generate your dataset :brain:")
     dataset_count = st.number_input("Number of datasets to generate", min_value=1, max_value=1000)
     options = {
-        "QnA": "Membuat QnA (Pertanyaan dan Jawaban)",
+        "QnA": "Membuat QnA (Pertanyaan dan Jawaban) dengan kata tanya `siapa`",
         "Summarization": "Membuat Rangkuman pasal atau sebuah topik pada pasal",
         "Element Extraction": "Melakukan Ekstraksi elemen atau identifikasi pasal",
         "Similarity Search": "Menemukan kesamaan pasal atau sebuah topik pasal, atau menemukan tumpang tindih pasal, atau atau merelasi pasal pasal terkait",
@@ -142,12 +142,12 @@ def main():
             other_documents = docs[1:]
             other_doc_names = [doc.name.replace('.pdf', '').replace('.csv', '') for doc in other_documents]
             user_prompt = f"Anda adalah model yang mengubah isi teks menjadi berbagai tugas hukum dalam format JSON. " \
-                      "Setiap JSON berisi ‘reference’ (tulis bunyi pasal dan ayat, serta nomor PP dan tahun), ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
+                      "Setiap JSON berisi ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
                       f"Hanya merespons dengan JSON dan tanpa teks tambahan. Tugas dapat berupa {detail_text}, dengan {main_doc_name} sebagai dokumen utama, sedangkan {other_doc_names} sebagai dokumen pendukung. Hasilkan sebanyak {dataset_count} data. Pastikan setiap pertanyaan dan jawaban unik dan tidak berulang, serta Pastikan untuk membuat pertanyaan dan jawaban dari tiap Topik. Buat hanya dari informasi yang diberikan saja. \n"
     else:
         docs = st.file_uploader("Upload the PDF/CSV Files here")
         user_prompt = f"Anda adalah model yang mengubah isi teks menjadi berbagai tugas hukum dalam format JSON. " \
-                      "Setiap JSON berisi ‘reference’ (tulis bunyi pasal dan ayat, serta nomor PP dan tahun), ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
+                      "Setiap JSON berisi ‘instruction’ (instruksi atau pertanyaan), dan ‘output’ (jawaban). " \
                       f"Hanya merespons dengan JSON dan tanpa teks tambahan. Tugas dapat berupa {detail_text}. Hasilkan sebanyak {dataset_count} data. Pastikan setiap pertanyaan dan jawaban unik dan tidak berulang, serta Pastikan untuk membuat pertanyaan dan jawaban dari tiap Topik. Buat hanya dari informasi yang diberikan saja. \n"
 
     st.markdown('''

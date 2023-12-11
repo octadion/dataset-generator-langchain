@@ -1,27 +1,47 @@
 [
     {
-        "reference": "PP 57 Tahun 2021, Bab 2, Lingkup Standar Nasional Pendidikan, Bagian Kelima Standar Penilaian Pendidikan, Pasal 16, Ayat 3",
-        "instruction": "Apa yang harus menjadi tujuan penilaian hasil belajar Peserta Didik?",
-        "output": "Tujuan penilaian hasil belajar Peserta Didik adalah berkeadilan, objektif, dan edukatif."
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 1, Perubahan Ketentuan Pasal 1, Ayat 27",
+        "instruction": "Buatlah draft pasal baru mengenai definisi kurikulum berdasarkan PP 66 Tahun 2010.",
+        "output": "Definisi Kurikulum: Kurikulum adalah seperangkat rencana dan pengaturan mengenai tujuan, isi, dan bahan pelajaran, serta cara yang digunakan sebagai pedoman penyelenggaraan kegiatan pembelajaran untuk mencapai tujuan pendidikan."
     },
     {
-        "reference": "PP 57 Tahun 2021, Bab 5, Evaluasi, Bagian Kedua Evaluasi Hasil Belajar Peserta Didik, Pasal 42, Ayat 3",
-        "instruction": "Apa yang menjadi acuan dalam evaluasi hasil belajar Peserta Didik?",
-        "output": "Acuan dalam evaluasi hasil belajar Peserta Didik adalah standar penilaian Pendidikan dan standar kompetensi lulusan."
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 1, Perubahan Ketentuan Pasal 1, Ayat 28",
+        "instruction": "Buatlah draft pasal baru mengenai definisi dosen berdasarkan PP 66 Tahun 2010.",
+        "output": "Definisi Dosen: Dosen adalah pendidik profesional dan ilmuwan pada perguruan tinggi dengan tugas utama mentransformasikan, mengembangkan, dan menyebarluaskan ilmu pengetahuan, teknologi, dan seni melalui pendidikan, penelitian, dan pengabdian kepada masyarakat."
     },
     {
-        "reference": "PP 57 Tahun 2021, Bab 5, Evaluasi, Bagian Kedua Evaluasi Hasil Belajar Peserta Didik, Pasal 42, Ayat 4",
-        "instruction": "Siapa yang dilakukan evaluasi hasil belajar Peserta Didik?",
-        "output": "Evaluasi hasil belajar Peserta Didik dilakukan terhadap Peserta Didik pendidikan anak usia dini, pendidikan dasar, pendidikan menengah, dan pendidikan tinggi."
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 1, Perubahan Ketentuan Pasal 1, Ayat 29",
+        "instruction": "Buatlah draft pasal baru mengenai definisi mahasiswa berdasarkan PP 66 Tahun 2010.",
+        "output": "Definisi Mahasiswa: Mahasiswa adalah peserta didik yang terdaftar dan belajar pada perguruan tinggi."
     },
     {
-        "reference": "PP 57 Tahun 2021, Bab 4, Kurikulum, Pasal 36, Ayat 2",
-        "instruction": "Apa yang dimaksud dengan kerangka dasar kurikulum?",
-        "output": "Kerangka dasar kurikulum adalah rancangan landasan utama dalam pengembangan struktur kurikulum."
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 1, Perubahan Ketentuan Pasal 1, Ayat 30",
+        "instruction": "Buatlah draft pasal baru mengenai definisi sivitas akademika berdasarkan PP 66 Tahun 2010.",
+        "output": "Definisi Sivitas Akademika: Sivitas akademika adalah komunitas dosen dan mahasiswa pada perguruan tinggi."
     },
     {
-        "reference": "PP 57 Tahun 2021, Bab 4, Kurikulum, Pasal 36, Ayat 3",
-        "instruction": "Apa yang dimaksud dengan struktur kurikulum?",
-        "output": "Struktur kurikulum adalah pengorganisasian atas kompetensi, muatan pembelajaran, dan beban belajar."
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 3, Perubahan Ketentuan Pasal 53, Ayat 1",
+        "instruction": "Buatlah draft pasal baru mengenai layanan pendidikan yang harus diberikan oleh satuan pendidikan berdasarkan PP 66 Tahun 2010.",
+        "output": "Layanan Pendidikan: Satuan pendidikan wajib memberikan layanan pendidikan kepada calon peserta didik dan peserta didik, tanpa memandang latar belakang agama, ras, etnis, gender, status sosial, dan kemampuan ekonomi."
+    },
+    {
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 3, Perubahan Ketentuan Pasal 53, Ayat 2",
+        "instruction": "Buatlah draft pasal baru mengenai layanan khusus yang harus diberikan oleh satuan pendidikan berdasarkan PP 66 Tahun 2010.",
+        "output": "Layanan Khusus: Satuan pendidikan wajib menjamin akses pelayanan pendidikan bagi peserta didik yang membutuhkan pendidikan khusus, dan layanan khusus."
+    },
+    {
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 10. Perubahan Ketentuan Pasal 184, Pasal 184, Ayat 1",
+        "instruction": "Buatlah draft pasal baru mengenai syarat pendirian satuan pendidikan formal berdasarkan PP 66 Tahun 2010.",
+        "output": "Syarat Pendirian Satuan Pendidikan Formal: Syarat-syarat pendirian satuan pendidikan formal meliputi isi pendidikan, jumlah dan kualifikasi pendidik dan tenaga kependidikan, sarana dan prasarana pendidikan, pembiayaan pendidikan, sistem evaluasi dan sertifikasi, serta manajemen dan proses pendidikan."
+    },
+    {
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 10. Perubahan Ketentuan Pasal 184, Pasal 184, Ayat 2",
+        "instruction": "Buatlah draft pasal baru mengenai pedoman syarat pendirian satuan pendidikan formal berdasarkan PP 66 Tahun 2010.",
+        "output": "Pedoman Syarat Pendirian Satuan Pendidikan Formal: Syarat-syarat sebagaimana dimaksud pada ayat (1) berpedoman pada ketentuan dalam Standar Nasional Pendidikan."
+    },
+    {
+        "reference": "PP 66 Tahun 2010, Pasal 1, Ayat 10. Perubahan Ketentuan Pasal 184, Pasal 184, Ayat 3",
+        "instruction": "Buatlah draft pasal baru mengenai lampiran syarat pendirian satuan pendidikan formal berdasarkan PP 66 Tahun 2010.",
+        "output": "Lampiran Syarat Pendirian Satuan Pendidikan Formal: Selain syarat-syarat sebagaimana dimaksud pada ayat (1) pendirian satuan pendidikan harus melampirkan hasil studi kelayakan tentang prospek pendirian satuan."
     }
 ]
